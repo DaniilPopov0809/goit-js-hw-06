@@ -3,8 +3,8 @@ const inputLength = +inputTextEl.dataset.length;
 
 inputTextEl.addEventListener('blur', onTextInput);
 
-function onTextInput(event) {
-    (event.currentTarget.value.length === inputLength) ?
+function onTextInput() {
+    (inputTextEl.value.length === inputLength) ?
         inputTextEl.classList.add('valid') : inputTextEl.classList.add('invalid');
     }
     
